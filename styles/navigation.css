@@ -1,55 +1,79 @@
-/* a {
-    font-size: 16px;
-    font-weight: 600;
-    color: #767676;
-}
- 
-a  {
-    text-decoration: none;
-}
- 
-.nav  {
-    position: fixed;
-    margin-left: 50px;
-    width: 100%;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-}
- 
-nav ul a {
-    margin-right: 40px
-}
- 
-.nav__logo  {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1b1b1b;
-}
- 
-.marked {
-    color: #1b1b1b
-}
-
-.buy {
-    list-style: none;
-}
- */
 
 .svgcart {
     height: 20px;
-    width:20px;
+    width: 20px;
+    color: black;
+    fill: currentColor;
+    font-weight: 500;
+    transition: all 200ms ease;
 }
 
 .svgsearch {
     height: 13px;
     width: 13px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+    fill: currentColor;
+    transition: all 200ms ease;
 }
 
-.cart p {
+.svgsearch:hover {
+    color: #dc3545;
+    transition: all 200ms ease;
+}
+
+.header {
+    position: fixed;
+    height: 130px;
+    z-index: 100;
+}
+
+.nav {
+    width: 100vw;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin: 0;
+    padding: 0;
+    position: fixed;
+    background: white;
+    z-index: 10;
+}
+
+.nav-scrolled {
+    height: 70px;
+    transition: all 200ms ease;
+}
+
+.nav_submenu, .nav_submenu2 {
+    position: relative;
+    list-style: none;
+}
+
+.navigation__category, .navigation__category2 {
+    position: absolute;
+    color: #767676;
+    list-style: none;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 25px 25px 25px 35px;
+    font-weight: 600;
+    text-align: end;
+    top: calc(100% + 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation__category li a:hover, .navigation__category2 li a:hover {
+    color: #1b1b1b;
+}
+
+.navigation__category li, .navigation__category2 li {
+    margin-bottom: 11px;
 }
 
 a {
@@ -57,39 +81,112 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: #767676;
-}
-
-.nav {
-    display: flex;
-    align-self: flex-end;  
-    justify-content: space-between; 
+    margin: 0;
 }
 
 .nav__logo {
     font-size: 30px;
     font-weight: 700;
     color: #1b1b1b;
+    transition: all 200ms ease;
+}
+
+.nav__logo-scrolled {
+    font-size: 24px;
+    transition: all 200ms ease;
 }
 
 .nav__items {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
+    margin-left: 156px;
+    padding: 0;
 }
 
-.nav__items a {
-    margin: 10px;
+.margin {
+    margin: 0 40px 0 0;
 }
 
 .buy {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 156px;
 }
 
 .cart {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    font-size: 14px;
+    transition: all 200ms ease;
 }
 
+#cart:hover .inner {
+    color: #dc3545;
+    transition: all 200ms ease;
+}
+
+.carttext {
+    font-weight: 500;
+    color: #1b1b1b;
+    margin: 0 0 0 13px;
+    transition: all 200ms ease;
+}
+
+.cartnumber {
+    margin-left: 4px;
+    font-weight: 500;
+    color: #1b1b1b;
+    transition: all 200ms ease;
+}
+
+#Capa_1 {
+    margin-left: 60px;
+}
+
+.searchbar {
+    bottom: 10px;
+    position: absolute;
+    height: 80px;
+    width: 100vw;
+    background: #e4e4e4;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 500ms ease;
+}
+
+.searchbar__form {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 60px 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.searchbar__form::placeholder {
+    font-style: italic;
+}
+
+.dropdown::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    content: '\f078';
+    color: #767676;
+    margin: 5px;
+}
+
+.marked {
+    color: black;
+}
+
+.marked::after {
+    color: black;
+}
