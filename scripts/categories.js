@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // Sorter drop-down
     let dropdown3 = document.querySelector('.sorter');
     let nav_category3 = document.querySelector('.sorting__list');
 
@@ -12,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
             fadeOut3(nav_category3)
         })
     })
+
+    // Showing 12 results
+    let amount = 12 ;
+
+    document.querySelector(".counter").textContent = `Showing ${amount} results` ;
+
 });
 
 function fadeOut3(nc) {
@@ -19,3 +27,4 @@ function fadeOut3(nc) {
     nc.style.top = 'calc(100% + 20px)';
     nc.style.visibility = 'hidden';
 }
+

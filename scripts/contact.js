@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // 1 Home drop-down
     let dropdown = document.querySelector('.nav_submenu');
     let nav_category = document.querySelector('.navigation__category');
 
@@ -13,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
+    // Categories drop-down
     let dropdown2 = document.querySelector('.nav_submenu2');
     let nav_category2 = document.querySelector('.navigation__category2');
 

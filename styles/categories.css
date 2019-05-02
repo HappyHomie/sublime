@@ -86,7 +86,6 @@
     line-height: 32px;
     cursor: pointer;
     color: #6c6a74;
-    /* float: right; */
 }
 
 .sorting__list {
@@ -96,7 +95,7 @@
     list-style: none;
     box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
     transition: all 0.3s ease;
-    width: 199px;
+    width: 189px;
     position: absolute;
     top: calc(100% + 20px);
     visibility: hidden;
