@@ -66,14 +66,14 @@
 }
 
 .sorting_text {
-    width: 160px;
+    width: 140px;
     height: 30px;
     line-height: 32px;
     cursor: pointer;
     border: solid 2px #ececec;
     padding-left: 26px;
     padding-right: 19px;
-    margin-right: 8px;
+    margin-right: 37px;
     font-size: 14px;
     font-weight: 400;
     color: #6c6a74;
@@ -96,7 +96,7 @@
     list-style: none;
     box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
     transition: all 0.3s ease;
-    width: 209px;
+    width: 199px;
     position: absolute;
     top: calc(100% + 20px);
     visibility: hidden;
@@ -104,11 +104,25 @@
 }
 
 .sorting__list-item {
-    padding: 0 15px;
     height: 36px;
     line-height: 36px;
     color: #6c6a74;
     text-align: right;
+}
+
+.sorting__list-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 400;
+    color: #6c6a74;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    
+}
+
+.sorting__list-item{
+    margin: 0 15px;
+
 }
 
 .sorting__list-item:not(:last-child) {
