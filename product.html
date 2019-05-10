@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sublime | Product</title>
-    <link rel="stylesheet" href="./styles/categories.css">
-    <link rel="stylesheet" href="./styles/utility.css">
-    <link rel="stylesheet" href="./styles/navigation.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/product.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/categories.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+  </head>
 
-<body id='body'>
+  <body id="body">
     <header id="header" class="header">
-        <nav class="nav" id='nav'>
-            <a href="#" class="nav__logo">Sublime.</a>
-            <ul class="nav__items">
-                <li class="nav_submenu margin"><a href="#" class="marked dropdown">Home</a>
-                    <ul class="navigation__category">
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Check out</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </li>
-                <li class="nav_submenu2 margin"><a href="./categories.html" class="dropdown">Categories</a>
-                    <ul class="navigation__category2">
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                    </ul>
-                </li>
-                <a href="#" class="margin">Accessories</a>
-                <a href="#" class="margin">Offers</a>
-                <a href="./contact.html">Contact</a>
+      <nav class="nav" id="nav">
+        <a href="#" class="nav__logo">Sublime.</a>
+        <ul class="nav__items">
+          <li class="nav_submenu margin">
+            <a href="#" class="marked dropdown">Home</a>
+            <ul class="navigation__category">
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Check out</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="buy">
-                <a href="#" class="cart" id="cart">
-                    <svg class="svgcart inner" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489 489"
-                        style="enable-background:new 0 0 489 489;" xml:space="preserve">
-                        <g>
-                            <path
-                                d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
+          </li>
+          <li class="nav_submenu2 margin">
+            <a href="./categories.html" class="dropdown">Categories</a>
+            <ul class="navigation__category2">
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="./categories.html">Categories</a></li>
+              <li><a href="./categories.html">Categories</a></li>
+            </ul>
+          </li>
+          <a href="#" class="margin">Accessories</a>
+          <a href="#" class="margin">Offers</a>
+          <a href="./contact.html">Contact</a>
+        </ul>
+        <div class="buy">
+          <a href="#" class="cart" id="cart">
+            <svg
+              class="svgcart inner"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 489 489"
+              style="enable-background:new 0 0 489 489;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
                                             c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1
                                             C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462
                                             H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41
-                                            c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z">
-                            </path>
-                        </g>
-                    </svg>
-                    <p class="carttext inner">Cart</p>
-                    <p class="cartnumber inner">(0)</p>
-                </a>
-                <svg class="svgsearch" onclick="toggle_visibility('searchbar')" version="1.1" id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 475.084 475.084" style="enable-background:new 0 0 475.084 475.084;"
-                    xml:space="preserve">
-                    <g>
-                        <path d="M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.047,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087
+                                            c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"
+                ></path>
+              </g>
+            </svg>
+            <p class="carttext inner">Cart</p>
+            <p class="cartnumber inner">(0)</p>
+          </a>
+          <svg
+            class="svgsearch"
+            onclick="toggle_visibility('searchbar')"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 475.084 475.084"
+            style="enable-background:new 0 0 475.084 475.084;"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.047,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087
                                         c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826
                                         C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676
                                         c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083
@@ -75,70 +98,103 @@
                                          M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549c-35.21,0-65.329-12.519-90.36-37.549
                                         c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36c25.026-25.032,55.15-37.546,90.36-37.546
                                         c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36C328.911,236.214,316.392,266.329,291.363,291.358z
-                                        "></path>
-                    </g>
-                </svg>
-            </div>
-        </nav>
-        <div class="searchbar" id="searchbar">
-            <input type="text" placeholder="Search" class="searchbar__form">
+                                        "
+              ></path>
+            </g>
+          </svg>
         </div>
+      </nav>
+      <div class="searchbar" id="searchbar">
+        <input type="text" placeholder="Search" class="searchbar__form" />
+      </div>
     </header>
     <div class="categories__maincontainer">
-        <div class="categories__imgcontainer">
-            <div class="categories__img">
-                <div class="img__content">
-                    <h1 class="categories__header">Smart Phones</h1>
-                    <p class="categories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-                        ultricies
-                        metus.<br> Sed nec
-                        molestie eros. Sed viverra velit venenatis fermentum luctus.</p>
-                </div>
-            </div>
+      <div class="categories__imgcontainer">
+        <div class="categories__img">
+          <div class="img__content">
+            <h1 class="categories__header">Smart Phones</h1>
+            <p class="categories__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
+              ultricies metus.<br />
+              Sed nec molestie eros. Sed viverra velit venenatis fermentum
+              luctus.
+            </p>
+          </div>
         </div>
-        <section class="productContainer">
-            <figure class="imgContainer">
-                <img class="productBigImg" src="pictures/details_1.jpg">
-                <a href="categories.html" class="product__new"></a>
-                <figure class="smallImgContainer">
-                    <img class="productImg" src="pictures/details_1.jpg">
-                    <img class="productImg" src="pictures/details_2.jpg">
-                    <img class="productImg" src="pictures/details_3.jpg">
-                    <img class="productImg" src="pictures/details_4.jpg">
-                </figure>
-            </figure>
-            <div class="descriptionContainer">
-                <h3 class="descriptionHeader">Smart Phone</h3>
-                <div class="descriptionPrice">
-                    <span class="price priceRed">$890</span>
-                    <span class="price">$670</span>
-                </div>
-                <p class="availability">Availability:</p>
-                <p class="descriptionText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi
-                    quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris
-                    diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
-                <div class="buyContainer">
-                    <div class="quantityContainer">
-                        <span class="quantityText">Qty</span>
-                        <i class="quantity">1</i>
-                    </div>
-                    <button class='submit contact_submit'><span>Add to Cart</span></button>
-                </div>
-                <div class="shareContainer">
-                    <span class="share">Share:</span>
-                    <div class="someContainer">
-                        <ul class="someUl">
-                            <li class="someLi"><i class="fab fa-pinterest"></i></li>
-                            <li class="someLi"><i class="fab fa-instagram"></i></i></li>
-                            <li class="someLi"><i class="fab fa-facebook"></i></li>
-                            <li class="someLi"><i class="fab fa-twitter"></i></li>
-                        </ul>
-                    </div>
-                </div>
+      </div>
+      <section class="productContainer">
+        <figure class="imgContainer">
+          <img class="productBigImg" src="pictures/details_1.jpg" />
+          <a href="categories.html" class="product__new"></a>
+          <figure class="smallImgContainer">
+            <img class="thumb1 productImg productImg-aktiv" src="pictures/details_1.jpg"/>
+            <img class="thumb2 productImg" src="pictures/details_2.jpg" />
+            <img class="thumb3 productImg" src="pictures/details_3.jpg" />
+            <img class="thumb4 productImg" src="pictures/details_4.jpg" />
+          </figure>
+        </figure>
+        <div class="descriptionContainer">
+          <h3 class="descriptionHeader">Smart Phone</h3>
+          <div class="descriptionPrice">
+            <span class="price priceRed">$890</span>
+            <span class="price">$670</span>
+          </div>
+          <p class="availability">Availability:</p>
+          <p class="descriptionText">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis
+            sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices
+            mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut
+            mauris efficitur lacinia.
+          </p>
+          <div class="buyContainer">
+            <div class="quantityContainer">
+              <span class="quantityText">Qty</span>
+              <input
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                value="1"
+                class="quantity">
+              <div class="arrows">
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+              </div>
             </div>
-        </section>
-        <!--         <div class="flex-container">
+            <button class="submit contact_submit">
+              <span>Add to Cart</span>
+            </button>
+          </div>
+          <div class="shareContainer">
+            <span class="share">Share:</span>
+            <div class="someContainer">
+              <ul class="someUl">
+                <li class="someLi"><i class="fab fa-pinterest"></i></li>
+                <li class="someLi"><i class="fab fa-instagram"></i></li>
+                <li class="someLi"><i class="fab fa-facebook"></i></li>
+                <li class="someLi"><i class="fab fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviewContainer">
+        <div class="reviewHeaderContainer">
+          <h3 class="descriptionHeader">Description</h3>
+          <a class="reviewHeader">Reviews (1)</a>
+        </div>
+        <p class="reviewText">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et
+          dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris
+          diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris
+          efficitur lacinia.
+        </p>
+      </section>
+      <section class="relatedContainer">
+        <h1 class="relatedProducts">Related Products</h1>
+      </section>
+      <!--         <div class="flex-container">
             <p class="counter"></p>
             <div class="sorter">
                 <li class="sorting_text"><span class="option">Sort by</span><i class="fa fa-chevron-down"></i></li>
@@ -149,34 +205,43 @@
                 </ul>
             </div>
         </div> -->
-        <div class="product__container">
+      <div class="product__container"></div>
+      <div class="subscribe__container">
+        <h2 class="subscribe__header">Subscribe to our newsletter</h2>
+        <p class="subscribe__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
+          ultricies metus. Sed nec molestie eros
+        </p>
+        <input class="subscribe__input" type="email" />
+        <button class="submit contact_submit"><span>Subscribe</span></button>
+      </div>
+      <footer class="footer">
+        <div class="footer-background">
+          <a class="footer-header">Sublime.</a>
+          <p class="footer-text">
+            Copyright © 2019 All rights reserved | This template is made with
+            <i class="far fa-heart"></i> <br />
+            by
+            <a href="https://www.colorlib.com" target="_blank">Colorlib</a>
+          </p>
+          <ul class="some">
+            <li>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
         </div>
-        <div class="subscribe__container">
-            <h2 class="subscribe__header">Subscribe to our newsletter</h2>
-            <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies
-                metus. Sed nec molestie eros</p>
-            <input class="subscribe__input" type="email">
-            <button class='submit contact_submit'><span>Subscribe</span></button>
-        </div>
-        <footer class="footer">
-            <div class="footer-background">
-                <a class="footer-header">Sublime.</a>
-                <p class="footer-text">
-                    Copyright © 2019 All rights reserved | This template is made with <i class="far fa-heart"></i>
-                    <br> by
-                    <a href="https://www.colorlib.com" target="_blank">Colorlib</a>
-                </p>
-                <ul class="some">
-                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-        <script src="./scripts/contact.js"></script>
-        <script src="./scripts/categories.js"></script>
-</body>
-
-
+      </footer>
+      <script src="./scripts/contact.js"></script>
+      <script src="./scripts/product.js"></script>
+    </div>
+  </body>
 </html>
