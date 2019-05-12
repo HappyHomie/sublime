@@ -127,7 +127,10 @@
           <img class="productBigImg" src="pictures/details_1.jpg" />
           <a href="categories.html" class="product__new"></a>
           <figure class="smallImgContainer">
-            <img class="thumb1 productImg productImg-aktiv" src="pictures/details_1.jpg"/>
+            <img
+              class="thumb1 productImg productImg-aktiv"
+              src="pictures/details_1.jpg"
+            />
             <img class="thumb2 productImg" src="pictures/details_2.jpg" />
             <img class="thumb3 productImg" src="pictures/details_3.jpg" />
             <img class="thumb4 productImg" src="pictures/details_4.jpg" />
@@ -151,13 +154,10 @@
           <div class="buyContainer">
             <div class="quantityContainer">
               <span class="quantityText">Qty</span>
-              <input
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                value="1"
-                class="quantity">
+              <div class="quantity" id="counter">1</div>
               <div class="arrows">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down"></i>
+                <i id="icon-up" class="fas fa-chevron-up"></i>
+                <i id="icon-down" class="fas fa-chevron-down"></i>
               </div>
             </div>
             <button class="submit contact_submit">

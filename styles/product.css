@@ -33,6 +33,7 @@
   height: 126px;
   width: 126px;
   border: solid 2px #00000000;
+  cursor: pointer;
 }
 
 .productImg-aktiv {
@@ -121,15 +122,13 @@
 
 .quantity {
   font-family: "Poppins", sans-serif;
-  width: 25px;
-  height: 55px;
   border: none;
   outline: none;
   font-size: 16px;
   font-weight: 600;
   color: #1b1b1b;
   padding-left: 9px;
-  line-height: 39px;
+  line-height: 57px;
 }
 
 .arrows{

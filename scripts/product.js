@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  // Describing products to product container (grid)
   let products = [
     {
       img: "pictures/product_1.jpg",
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       tag: "none"
     }
   ];
-
+// Creating products & inject them to HTML
   renderProducts();
   function renderProducts() {
     document.querySelector(".product__container").innerHTML = "";
@@ -45,63 +47,64 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+// Choose img 
   let mainImg = document.querySelector(".productBigImg");
   let subsImg = document.querySelectorAll(".productImg");
 
   subsImg.forEach(element => {
-    element.addEventListener("click", event => {
-      /* mainImg.src = event.target.src; */
-      mainImg.src = event.target.getAttribute("src");
-    });
+    element.addEventListener("click", event => imgSelector(event));
   });
 
-  let thumb1 = document.querySelector(".thumb1");
-  let thumb2 = document.querySelector(".thumb2");
-  let thumb3 = document.querySelector(".thumb3");
-  let thumb4 = document.querySelector(".thumb4");
+// Removing active class from all elements & adding the class to the target img
+  function imgSelector(event){
+    subsImg.forEach(element => element.classList.remove("productImg-aktiv"));
+    event.target.classList.add("productImg-aktiv");
+    mainImg.src = event.target.getAttribute("src");
+  }
 
-  thumb1.addEventListener("click", event => {
-    thumb1.classList.add("productImg-aktiv");
-    thumb2.classList.remove("productImg-aktiv");
-    thumb3.classList.remove("productImg-aktiv");
-    thumb4.classList.remove("productImg-aktiv");
-  });
-
-  thumb2.addEventListener("click", event => {
-    thumb2.classList.add("productImg-aktiv");
-    thumb1.classList.remove("productImg-aktiv");
-    thumb3.classList.remove("productImg-aktiv");
-    thumb4.classList.remove("productImg-aktiv");
-  });
-
-  thumb3.addEventListener("click", event => {
-    thumb3.classList.add("productImg-aktiv");
-    thumb1.classList.remove("productImg-aktiv");
-    thumb2.classList.remove("productImg-aktiv");
-    thumb4.classList.remove("productImg-aktiv");
-  });
-
-  thumb4.addEventListener("click", event => {
-    thumb4.classList.add("productImg-aktiv");
-    thumb1.classList.remove("productImg-aktiv");
-    thumb2.classList.remove("productImg-aktiv");
-    thumb3.classList.remove("productImg-aktiv");
+// Quantity counter (arrow up & down)
+  let quantity = document.querySelector("#counter");
+  let iconUp = document.querySelector("#icon-up");
+  let iconDown = document.querySelector("#icon-down");
+  
+  iconUp.addEventListener("click", () => quantity.innerHTML = ++quantity.innerHTML);
+  iconDown.addEventListener("click", () => {
+    quantity.innerHTML = (quantity.innerHTML > 1) ? --quantity.innerHTML: 1   /* Turnary/Conditional operater */
   });
 });
+
 /* 
-subsImg.forEach(element => {
-  subsImg.addEventListener("click", _addClasses()
-  );
+let thumb1 = document.querySelector(".thumb1");
+let thumb2 = document.querySelector(".thumb2");
+let thumb3 = document.querySelector(".thumb3");
+let thumb4 = document.querySelector(".thumb4");
+
+thumb1.addEventListener("click", event => {
+  thumb1.classList.add("productImg-aktiv");
+  thumb2.classList.remove("productImg-aktiv");
+  thumb3.classList.remove("productImg-aktiv");
+  thumb4.classList.remove("productImg-aktiv");
 });
 
-function _removeClasses() {
-  for (var i = 1; i < subsImg.length; i++) {
-    subsImg[i].classList.remove('productImg-aktiv')
-  }
-}
-function _addClasses() {
-  console.log('I am clicked');
-  subsImg[0].classList.add('productImg-aktiv');
-  if (subsImg[0]) _addClasses();
-  }
- */
+thumb2.addEventListener("click", event => {
+  thumb2.classList.add("productImg-aktiv");
+  thumb1.classList.remove("productImg-aktiv");
+  thumb3.classList.remove("productImg-aktiv");
+  thumb4.classList.remove("productImg-aktiv");
+});
+
+thumb3.addEventListener("click", event => {
+  thumb3.classList.add("productImg-aktiv");
+  thumb1.classList.remove("productImg-aktiv");
+  thumb2.classList.remove("productImg-aktiv");
+  thumb4.classList.remove("productImg-aktiv");
+});
+
+thumb4.addEventListener("click", event => {
+  thumb4.classList.add("productImg-aktiv");
+  thumb1.classList.remove("productImg-aktiv");
+  thumb2.classList.remove("productImg-aktiv");
+  thumb3.classList.remove("productImg-aktiv");
+});
+
+*/
