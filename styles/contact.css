@@ -1,12 +1,5 @@
 /* Contact */
-
-.contact__maincontainer {
-    z-index: 100;
-    padding: 0 0 97px;
-    margin-bottom: 129px;
-    background-color: #FFFFFF;
-}
-
+/* MainContainer kig i utility */
 .contact__imgcontainer {
     padding-left: 60px;
     padding-right: 60px;
@@ -29,6 +22,7 @@
     display: flex;
     align-items: center;
     list-style: none;
+    flex-direction: row;
 }
 
 .img__text--link {

@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   iconUp.addEventListener("click", () => quantity.innerHTML = ++quantity.innerHTML);
   iconDown.addEventListener("click", () => {
-    quantity.innerHTML = (quantity.innerHTML > 1) ? --quantity.innerHTML: 1   /* Turnary/Conditional operater */
+    quantity.innerHTML = (quantity.innerHTML > 0) ? --quantity.innerHTML: 0   /* Conditional (ternary) operator */
   });
 });
 

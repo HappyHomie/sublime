@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  function fadeOut3(nc) {
+    nc.style.opacity = "0";
+    nc.style.top = "calc(100% + 20px)";
+    nc.style.visibility = "hidden";
+  }
+
   // Products
   let products = [
     {
@@ -149,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="categories.html" class="${Element.tag}"></a>
             </div>
             <div class="product__content">
-            <a href="#" class="product__text">${Element.desc}</a>
+            <a href="./product.html" class="product__text">${Element.desc}</a>
             <div class="product__price">$${Element.price}</div>
             </div>
             </div>
@@ -163,8 +169,3 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector(".counter").textContent = `Showing ${amount} results`;
 });
 
-function fadeOut3(nc) {
-  nc.style.opacity = "0";
-  nc.style.top = "calc(100% + 20px)";
-  nc.style.visibility = "hidden";
-}
